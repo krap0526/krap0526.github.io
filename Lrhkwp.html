@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>20252801 박제현 자기 이력 홈페이지</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e6f7ff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 4px solid #00bfff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    nav {
+      text-align: center;
+      background: #f0fbff;
+      padding: 1rem;
+      border-bottom: 1px solid #d0f0ff;
+    }
+
+    nav a {
+      color: #00bfff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00a3cc;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 0.5rem;
+    }
+
+    .skill-list, .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-list li, .project-list li {
+      background: #f5fcff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #00bfff;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #e6f7ff;
+      font-size: 0.9rem;
+      border-top: 2px solid #00bfff;
+    }
+
+    a.email {
+      color: #00aaff;
+    }
+
+    a.email:hover {
+      text-decoration: underline;
+    }
+
+    a.phone {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    a.phone:hover {
+      text-decoration: underline;
+    }
+
+    #toTopBtn {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      display: none;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 50%;
+      font-size: 2rem;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    #toTopBtn:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>20252801 박제현 자기 이력 홈페이지</h1>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#skills">나의 스킬</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#career">희망 직무</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <section id="about">
+    <h2>소개</h2>
+    <p>20252801 박제현 자기 이력 홈페이지 입니다.</p>
+  </section>
+
+  <section id="skills">
+    <h2>나의 스킬</h2>
+    <ul class="skill-list">
+      <li><strong>HTML, JavaScript, CSS, Python, C</strong></li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <ul class="project-list">
+      <li>
+        <strong>숫자 맞추기 게임</strong><br/>
+        랜덤한 숫자를 UP, DOWN 과 같은 힌트를 통해 맞추는 게임
+      </li>
+      <li>
+        <strong>장애물 피하기 게임</strong><br/>
+        위에서 떨어지는 장애물을 피해 과일을 먹어 점수를 올리는 게임
+      </li>
+      <li>
+        <strong>실시간 채팅 앱</strong> (예정)<br/>
+        다른 사람들과 실시간으로 대화를 할 수 있는 앱
+      </li>
+      <li>
+        <strong>멀티플레이 파티 게임</strong> (예정)<br/>
+        여러 명이 함께 플레이할 수 있는 파티 게임
+      </li>
+      <li>
+        <strong>저녁 추천 앱</strong> (예정)<br/>
+        자신이 좋아하는 메뉴들을 추가하고 그 중에서 랜덤하게 저녁 메뉴를 추천해주는 앱
+      </li>
+    </ul>
+  </section>
+
+  <section id="career">
+    <h2>희망 직무</h2>
+    <p>
+      <strong>게임 클라이언트 프로그래머, 게임 서버 프로그래머</strong>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>연락처</h2>
+    <p>Email : <a class="email" href="mailto:pjh05263578@gmail.com">pjh05263578@gmail.com</a></p>
+    <p>전화번호 : <a class="phone" href="tel:01058313578">010-5831-3578</a></p>
+  </section>
+
+  <footer>
+    &copy; 20252801 박제현 자기 이력 홈페이지
+  </footer>
+
+  <button id="toTopBtn" title="맨 위로 가기">↑</button>
+
+  <script>
+    const toTopBtn = document.getElementById('toTopBtn');
+
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 100) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    };
+
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
